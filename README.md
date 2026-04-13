@@ -45,7 +45,7 @@ Go to:
 
 http://localhost:8501
 
-6.Login Details(You can use either set of details to log in:
+6.Login Details(You can use either set of details to log in):
 
 Username:doctor, Password:health123
 
