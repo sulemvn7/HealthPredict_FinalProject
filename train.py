@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 
-from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -35,8 +35,7 @@ def log_action(message):
 log_action("Training pipeline started")
 
 # Create models folder
-if not os.path.exists("models"):
-    os.makedirs("models")
+os.makedirs("models", exist_ok=True)
 
 # Load dataset
 data = pd.read_csv("data/diabetes.csv")
@@ -47,7 +46,7 @@ cols_with_zero_invalid = ["Glucose", "BloodPressure", "SkinThickness", "Insulin"
 
 for col in cols_with_zero_invalid:
     data[col] = data[col].replace(0, np.nan)
-    data[col].fillna(data[col].median(), inplace=True)
+    data[col] = data[col].fillna(data[col].median())  # fixed inplace warning
 
 X = data.drop("Outcome", axis=1)
 y = data["Outcome"]
@@ -94,7 +93,6 @@ for name, model in models.items():
     acc = accuracy_score(y_test, y_pred)
 
     log_action(f"{name} accuracy: {acc:.4f}")
-
     print(f"{name} Accuracy: {acc:.4f}")
 
     if acc > best_accuracy:
@@ -103,7 +101,6 @@ for name, model in models.items():
         best_model_name = name
 
 log_action(f"Best model selected: {best_model_name} | Accuracy={best_accuracy:.4f}")
-
 print(f"Best Model: {best_model_name} with accuracy {best_accuracy:.4f}")
 
 # Save model and scaler
@@ -122,9 +119,12 @@ f1 = f1_score(y_test, y_pred)
 
 cm = confusion_matrix(y_test, y_pred)
 
+
 y_proba = best_model.predict_proba(X_test_scaled)[:, 1]
-fpr, tpr, _ = roc_curve(y_proba, y_test)
+fpr, tpr, _ = roc_curve(y_test, y_proba)  # FIX HERE
 roc_auc = auc(fpr, tpr)
+
+print(f"ROC AUC Score: {roc_auc:.4f}")
 
 log_action(f"Final evaluation completed | Accuracy={accuracy:.4f} | F1={f1:.4f}")
 
@@ -145,6 +145,7 @@ plt.legend()
 plt.savefig("models/roc_curve.png")
 plt.close()
 
+# Feature importance (only for models that support it)
 if hasattr(best_model, "feature_importances_"):
     importances = best_model.feature_importances_
 
