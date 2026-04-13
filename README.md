@@ -31,11 +31,15 @@ Make sure Python (3.10+) is installed, then run:
 
 pip install -r requirements.txt
 
-3. Run the application
+3.Run this in the terminal to create the models folder:
+
+python train.py
+
+4. Run the application
 
 streamlit run app.py
 
-4. Open in browser
+5. Open in browser
 
 Go to:
 
