@@ -1,0 +1,124 @@
+[2026-04-03 04:50:19.255823] Training pipeline started
+[2026-04-03 04:50:19.511086] Dataset loaded: data/diabetes.csv
+[2026-04-03 04:50:19.648614] Training model: Logistic Regression
+[2026-04-03 04:50:19.707170] Logistic Regression accuracy: 0.7532
+[2026-04-03 04:50:19.724007] Training model: Random Forest
+[2026-04-03 04:50:44.672290] Random Forest accuracy: 0.7532
+[2026-04-03 04:50:44.679778] Training model: KNN
+[2026-04-03 04:50:45.057460] KNN accuracy: 0.7403
+[2026-04-03 04:50:45.060794] Best model selected: Logistic Regression | Accuracy=0.7532
+[2026-04-03 04:50:45.100387] Model and scaler saved to disk
+[2026-04-03 05:06:17.189945] Dataset uploaded in retraining module
+[2026-04-03 05:06:20.091361] Target selected: Id
+[2026-04-03 05:06:36.966431] Dataset uploaded in retraining module
+[2026-04-03 05:06:36.997836] Target selected: SkinThickness
+[2026-04-03 05:06:37.037603] Training started using Random Forest
+[2026-04-03 05:06:38.060280] Model trained | Accuracy=0.9819 | F1=0.9819
+[2026-04-03 05:06:38.113945] New model outperformed existing model
+[2026-04-03 05:07:23.578818] Dataset uploaded in retraining module
+[2026-04-03 05:07:23.844196] Target selected: Pregnancies
+[2026-04-03 05:07:47.052024] Dataset uploaded in retraining module
+[2026-04-03 05:07:47.097980] Target selected: Pregnancies
+[2026-04-03 05:07:55.424492] Dataset uploaded in retraining module
+[2026-04-03 05:07:55.446896] Target selected: BloodPressure
+[2026-04-03 05:07:58.275364] Dataset uploaded in retraining module
+[2026-04-03 05:07:58.303267] Target selected: BloodPressure
+[2026-04-03 05:08:01.630401] Dataset uploaded in retraining module
+[2026-04-03 05:08:01.694319] Target selected: BloodPressure
+[2026-04-03 05:08:01.806008] Training started using Logistic Regression
+[2026-04-03 05:08:01.972831] Model trained | Accuracy=0.5065 | F1=0.4634
+[2026-04-03 05:08:02.048006] Existing model performed better than new model
+[2026-04-07 04:25:16.094559] Dataset uploaded in retraining module
+[2026-04-07 04:25:17.417139] Target selected: Pregnancies
+[2026-04-07 04:25:21.543169] Outlier detection run | 14 outliers detected
+[2026-04-07 04:25:43.405039] Dataset uploaded in retraining module
+[2026-04-07 04:25:43.640317] Target selected: Pregnancies
+[2026-04-07 04:25:44.427893] Outlier detection run | 14 outliers detected
+[2026-04-07 04:25:44.498874] Training started using Random Forest
+[2026-04-07 04:25:45.901145] Model trained | Accuracy=0.6494 | F1=0.6245
+[2026-04-07 04:25:46.112046] Existing model performed better than new model
+[2026-04-07 04:26:29.059510] Dataset uploaded in retraining module
+[2026-04-07 04:26:29.317689] Target selected: Pregnancies
+[2026-04-07 04:26:30.854032] Dataset uploaded in retraining module
+[2026-04-07 04:26:30.980964] Target selected: Pregnancies
+[2026-04-07 04:26:32.915959] Outlier detection run | 14 outliers detected
+[2026-04-07 04:26:32.998764] Training started using Logistic Regression
+[2026-04-07 04:26:33.210373] Model trained | Accuracy=0.6364 | F1=0.5926
+[2026-04-07 04:26:33.407301] Existing model performed better than new model
+[2026-04-07 04:27:34.918879] Dataset uploaded in retraining module
+[2026-04-07 04:27:35.799256] Target selected: Id
+[2026-04-07 04:27:37.192427] Outlier detection run | 29 outliers detected
+[2026-04-07 04:27:48.639066] Dataset uploaded in retraining module
+[2026-04-07 04:27:48.702340] Target selected: Id
+[2026-04-07 04:27:49.506582] Outlier detection run | 29 outliers detected
+[2026-04-07 04:27:49.585902] Training started using Logistic Regression
+[2026-04-07 04:27:49.799337] Model trained | Accuracy=0.3105 | F1=0.3072
+[2026-04-07 04:27:49.886676] Existing model performed better than new model
+[2026-04-07 04:28:05.970958] Dataset uploaded in retraining module
+[2026-04-07 04:28:06.044953] Target selected: SkinThickness
+[2026-04-07 04:28:06.849478] Outlier detection run | 26 outliers detected
+[2026-04-07 04:28:12.695177] Dataset uploaded in retraining module
+[2026-04-07 04:28:12.758211] Target selected: SkinThickness
+[2026-04-07 04:28:13.833862] Outlier detection run | 26 outliers detected
+[2026-04-07 04:28:14.472590] Dataset uploaded in retraining module
+[2026-04-07 04:28:14.523778] Target selected: SkinThickness
+[2026-04-07 04:28:15.343307] Outlier detection run | 26 outliers detected
+[2026-04-07 04:28:15.442790] Training started using Random Forest
+[2026-04-07 04:28:17.592354] Model trained | Accuracy=0.9783 | F1=0.9783
+[2026-04-07 04:28:17.766445] New model outperformed existing model
+[2026-04-07 04:28:34.463006] Dataset uploaded in retraining module
+[2026-04-07 04:28:36.205865] Target selected: Name
+[2026-04-07 04:28:40.054326] Outlier detection run | 596 outliers detected
+[2026-04-07 04:28:49.697829] Dataset uploaded in retraining module
+[2026-04-07 04:28:51.707445] Target selected: Name
+[2026-04-07 04:28:55.318050] Outlier detection run | 596 outliers detected
+[2026-04-07 04:28:55.366452] Training started using Random Forest
+[2026-04-07 04:29:22.407456] Dataset uploaded in retraining module
+[2026-04-07 04:29:23.261674] Dataset uploaded in retraining module
+[2026-04-07 04:29:26.267752] Target selected: Name
+[2026-04-07 04:29:30.488703] Outlier detection run | 596 outliers detected
+[2026-04-07 04:29:30.636461] Training started using Logistic Regression
+[2026-04-07 04:29:39.904796] Dataset uploaded in retraining module
+[2026-04-07 04:29:42.111493] Target selected: Gender
+[2026-04-07 04:29:53.519685] Outlier detection run | 588 outliers detected
+[2026-04-09 04:00:30.178888] Dataset uploaded in retraining module
+[2026-04-09 04:00:30.982424] Target selected: Pregnancies
+[2026-04-09 04:00:33.160016] Outlier detection run | 14 outliers detected
+[2026-04-09 04:05:23.503599] Dataset uploaded in retraining module
+[2026-04-09 04:05:26.635686] Dataset uploaded in retraining module
+[2026-04-09 04:06:28.430989] Dataset uploaded in retraining module
+[2026-04-09 04:06:30.056865] Target selected: Pregnancies
+[2026-04-09 04:06:33.543956] Outlier detection run | 14 outliers detected
+[2026-04-09 04:06:45.897957] Dataset uploaded in retraining module
+[2026-04-09 04:06:46.029405] Target selected: Pregnancies
+[2026-04-09 04:06:46.634397] Outlier detection run | 14 outliers detected
+[2026-04-09 04:06:46.683751] Training started using Random Forest
+[2026-04-09 04:06:47.554822] Model trained | Accuracy=0.6234 | F1=0.5908
+[2026-04-09 04:06:47.622221] Existing model performed better than new model
+[2026-04-10 03:26:16.613430] Dataset uploaded in retraining module
+[2026-04-10 03:26:16.994633] Target selected: Id
+[2026-04-10 03:26:20.380937] Outlier detection run | 29 outliers detected
+[2026-04-10 03:26:25.854467] Dataset uploaded in retraining module
+[2026-04-10 03:26:25.875597] Target selected: BloodPressure
+[2026-04-10 03:26:26.545003] Outlier detection run | 31 outliers detected
+[2026-04-10 03:26:36.431533] Dataset uploaded in retraining module
+[2026-04-10 03:26:36.454620] Target selected: BloodPressure
+[2026-04-10 03:26:36.936382] Outlier detection run | 31 outliers detected
+[2026-04-10 03:26:37.355060] Dataset uploaded in retraining module
+[2026-04-10 03:26:37.387888] Target selected: BloodPressure
+[2026-04-10 03:26:37.869249] Outlier detection run | 31 outliers detected
+[2026-04-10 03:26:37.899616] Training started using Logistic Regression
+[2026-04-10 03:26:38.006303] Model trained | Accuracy=0.4892 | F1=0.4545
+[2026-04-10 03:26:38.088685] Existing model performed better than new model
+[2026-04-10 03:26:45.523195] Dataset uploaded in retraining module
+[2026-04-10 03:26:45.544600] Target selected: Pregnancies
+[2026-04-10 03:26:46.010092] Outlier detection run | 35 outliers detected
+[2026-04-10 03:26:49.503509] Dataset uploaded in retraining module
+[2026-04-10 03:26:49.535778] Target selected: Pregnancies
+[2026-04-10 03:26:50.008926] Outlier detection run | 35 outliers detected
+[2026-04-10 03:26:52.252844] Dataset uploaded in retraining module
+[2026-04-10 03:26:52.287922] Target selected: Pregnancies
+[2026-04-10 03:26:52.762609] Outlier detection run | 35 outliers detected
+[2026-04-10 03:26:52.780579] Training started using Random Forest
+[2026-04-10 03:26:53.786276] Model trained | Accuracy=0.9729 | F1=0.9726
+[2026-04-10 03:26:54.020472] New model outperformed existing model
