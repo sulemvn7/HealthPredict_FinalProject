@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html, body, [class*="css"] { font-family: 'Poppins', sans-serif; }
+
+/* Main App Background */
+.stApp {
+    background-color: #ffffff;  
+    color: #111111;             
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #111111;
+    font-weight: 700;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #f7f7f7;  
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #00c9ff;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+.stButton>button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,201,255,0.5);
+}
+
+/* Containers / Blocks */
+.block-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Login Page Styling */
+
+/* Login card container */
+.login-container {
+    max-width: 420px;
+    margin: auto;
+    margin-top: 120px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Login title */
+.login-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00a8cc;
+    margin-bottom: 10px;
+}
+
+/* Login subtitle */
+.login-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+.login-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #00c9ff, #92fe9d, #00c9ff, #92fe9d);
+    background-size: 800% 800%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1; 
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
