@@ -2,7 +2,7 @@
 
 ## Overview
 
-HealthPredict is a machine learning web application that predicts disease risk (e.g., diabetes) using patient data and allows retraining, evaluation, and monitoring of models.
+HealthPredict is a machine learning web application that predicts diabetes using patient data and allows retraining, evaluation, and monitoring of models.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -31,11 +31,9 @@ Make sure Python (3.10+) is installed, then run:
 
 pip install -r requirements.txt
 
-
 3. Run the application
 
 streamlit run app.py
-
 
 4. Open in browser
 
