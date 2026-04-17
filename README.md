@@ -21,7 +21,7 @@ HealthPredict is a machine learning web application that predicts diabetes using
 
 ## ⚙️ Setup & Run Instructions
 
-1. Clone the repository
+1. Clone the repository link using the web URL.
 
 git clone <your-repo-link>
 
