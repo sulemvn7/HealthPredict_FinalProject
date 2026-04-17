@@ -65,6 +65,7 @@ Username:admin, Password:predict456
 * seaborn
 * joblib
 * shap
+* plotly
 
 Install all using:
 
