@@ -64,6 +64,7 @@ Username:admin, Password:predict456
 * matplotlib
 * seaborn
 * joblib
+* shap
 
 Install all using:
 
