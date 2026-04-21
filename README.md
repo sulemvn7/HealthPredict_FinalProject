@@ -5,6 +5,7 @@
 HealthPredict is a machine learning web application that predicts diabetes using patient data and allows retraining, evaluation, and monitoring of models.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note:The project and the features can take a short while to load so please be patient.
 
 ## Core Features
 
